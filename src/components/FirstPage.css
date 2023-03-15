@@ -1,0 +1,55 @@
+.firstPage {
+  height: 100vh;
+  width: 100%;
+}
+.firstPage img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: brightness(20%);
+}
+.barIcon {
+  padding: 0.5em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: whitesmoke;
+  width: 2.2em;
+  height: 2.2em;
+  font-size: 1em;
+  border-radius: 50%;
+  background: 5px var(--themeColor);
+}
+.barIcon:hover {
+  cursor: pointer;
+}
+.z {
+  z-index: 100;
+}
+.info {
+  color: whitesmoke;
+  position: absolute;
+  margin-left: 300px;
+  top: 50%;
+}
+.info .underline {
+  border-bottom: 2px solid var(--themeColor);
+}
+@media only screen and (max-width: 650px) {
+  .firstPage img {
+    height: 100vh;
+    width: 100vw;
+  }
+  .info {
+    margin-left: 200px;
+    font-size: 7px;
+  }
+  .info .underline {
+    border: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .barIcon {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,44 @@
+.projectCard {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  /* height: 14em; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+}
+.projectCard .projectImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.projectCard .projectInfo {
+  padding: 0.2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--themeColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+.projectCard .projectInfo h4 {
+  color: white;
+  font-weight: 50;
+}
+.projectCard:hover .projectInfo {
+  cursor: pointer;
+  transform: scale(1);
+  visibility: visible;
+}
+/* mobile view */
+@media only screen and (max-width: 780px) {
+  .projectCard .projectInfo {
+    font-size: 12px;
+  }
+}

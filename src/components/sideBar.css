@@ -1,0 +1,108 @@
+.sideBar {
+  position: absolute;
+  width: 300px;
+  background: var(--sideBgColor);
+  height: 100%;
+  left: -300px;
+  padding: 1em;
+  transition: all 1s;
+}
+.sideBar #myImage {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+.sideBar #myImage #img {
+  height: 100px;
+  width: 100px;
+  filter: brightness(70%);
+  border-radius: 50%;
+  border: 5px solid var(--iconBgColor);
+}
+.icons {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 3px;
+}
+.socials {
+  margin: 3em auto;
+  display: flex;
+  gap: 2em;
+}
+.socials a {
+  text-decoration: none;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid var(--iconBgColor);
+  transition: all ease-in 0.5s;
+}
+.socials a:hover {
+  background: var(--themeColor);
+}
+.directories li {
+  list-style: none;
+  line-height: 40px;
+  display: flex;
+  gap: 2em;
+  padding: 1em;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.directories li p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.directories li:hover {
+  background: var(--themeColor);
+  cursor: pointer;
+}
+.directories li .icons {
+  margin-top: 4px;
+}
+@media only screen and (max-width: 650px) {
+  .sideBar {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sideBar {
+    width: 200px;
+  }
+  .directories li p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .directories li .icons {
+    font-size: 14px;
+    margin-top: 1.5px;
+  }
+  .socials a {
+    height: 35px;
+    width: 35px;
+  }
+  .socials {
+    gap: 0.5em;
+  }
+  .icons {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+  .copyright p {
+    font-size: 14px;
+  }
+}
+/* copyright section */
+
+.copyright p {
+  color: whitesmoke;
+  margin-top: 1em;
+  text-align: center;
+}
+.copyright .name {
+  color: var(--themeColor);
+}
